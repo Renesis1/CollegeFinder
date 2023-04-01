@@ -47,16 +47,16 @@ const IndexPage = () => {
                 <RadioGroup defaultValue="0">
                   <Stack>
                     <Radio colorScheme="green" value="1">
-                      Unchecked
+                      Less than 10,000
                     </Radio>
                     <Radio colorScheme="green" value="2">
-                      Unchecked
+                      10,000-30,000
                     </Radio>
                     <Radio colorScheme="green" value="3">
-                      Unchecked
+                      30,000-50,000
                     </Radio>
                     <Radio colorScheme="green" value="4">
-                      Unchecked
+                      Over 50,000
                     </Radio>
                   </Stack>
                 </RadioGroup>

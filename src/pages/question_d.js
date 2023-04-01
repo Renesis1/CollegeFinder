@@ -7,15 +7,13 @@ import {
   CardBody,
   Center,
   Heading,
-  Radio,
-  RadioGroup,
   Stack,
   StackDivider,
-  Text,
   VStack,
   useColorMode,
   CircularProgress,
   CircularProgressLabel,
+  Input,
 } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
 import { useRouter } from "next/router";
@@ -42,22 +40,7 @@ const IndexPage = () => {
               <Heading>4. What do you want to major in?</Heading>
               <Stack direction="row" h="150px" p={4}>
                 <Divider orientation="vertical" />
-                <RadioGroup defaultValue="0">
-                  <Stack>
-                    <Radio colorScheme="green" value="1">
-                      Unchecked
-                    </Radio>
-                    <Radio colorScheme="green" value="2">
-                      Unchecked
-                    </Radio>
-                    <Radio colorScheme="green" value="3">
-                      Unchecked
-                    </Radio>
-                    <Radio colorScheme="green" value="4">
-                      Unchecked
-                    </Radio>
-                  </Stack>
-                </RadioGroup>
+                <Input variant="outline" placeholder="Enter your major here" />
               </Stack>
             </CardBody>
           </Card>
