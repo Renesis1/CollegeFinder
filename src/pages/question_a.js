@@ -18,9 +18,17 @@ import {
   CircularProgressLabel,
 } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
 const IndexPage = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  const router = useRouter();
+  function handleBackClick() {
+    router.back();
+  }
+  function handleClick() {
+    router.push("/question_b");
+  }
 
   return (
     <>
@@ -56,8 +64,10 @@ const IndexPage = () => {
           </Card>
           <Center>
             <ButtonGroup variant="outline" spacing="6">
-              <Button colorScheme="green">Next</Button>
-              <Button>Cancel</Button>
+              <Button colorScheme="green" onClick={handleClick}>
+                Next
+              </Button>
+              <Button onClick={handleBackClick}>Cancel</Button>
             </ButtonGroup>
           </Center>
         </VStack>

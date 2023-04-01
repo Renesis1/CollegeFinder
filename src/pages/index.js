@@ -18,8 +18,13 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { useRouter } from "next/router";
 const IndexPage = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  const router = useRouter();
+  function handleClick() {
+    router.push("/question_a");
+  }
 
   return (
     <>
@@ -51,7 +56,12 @@ const IndexPage = () => {
               </Text>
             </Box>
             <Box>
-              <Button size="lg" colorScheme="green" mt="24px">
+              <Button
+                size="lg"
+                colorScheme="green"
+                mt="24px"
+                onClick={handleClick}
+              >
                 Get Started Now
               </Button>
             </Box>
