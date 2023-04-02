@@ -25,7 +25,7 @@ const IndexPage = () => {
     router.back();
   }
   function handleClick() {
-    router.push("/placeholder");
+    router.push("/list");
   }
   return (
     <>

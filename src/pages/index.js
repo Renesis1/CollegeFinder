@@ -1,21 +1,6 @@
 import Head from "next/head";
-import {
-  AbsoluteCenter,
-  Box,
-  Button,
-  Heading,
-  useColorMode,
-} from "@chakra-ui/react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Text,
-  Center,
-  Flex,
-  Grid,
-} from "@chakra-ui/react";
+import { Box, Button, Heading, useColorMode } from "@chakra-ui/react";
+import { Text, Center, Flex } from "@chakra-ui/react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
